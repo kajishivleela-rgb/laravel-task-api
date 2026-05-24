@@ -20,3 +20,13 @@ git clone https://github.com/kajishivleela-rgb/laravel-task-api.git
 cd laravel-task-api
 composer install
 cp .env.example .env
+
+Update .env with your database credentials, then run:
+
+php artisan key:generate
+php artisan migrate
+php artisan serve
+
+API runs at http://localhost:8000
+
+Import Task_API.postman_collection.json from this repo to test all endpoints.
